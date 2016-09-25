@@ -32,5 +32,11 @@
       </navLabel>
       <content src="article.html#Similar_quotations"/>
     </navPoint>
+    <navPoint id="navpoint-5" playOrder="5">
+      <navLabel>
+        <text>See also</text>
+      </navLabel>
+      <content src="article.html#See_also"/>
+    </navPoint>
   </navMap>
 </ncx>
