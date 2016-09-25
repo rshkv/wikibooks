@@ -38,5 +38,11 @@
       </navLabel>
       <content src="article.html#See_also"/>
     </navPoint>
+    <navPoint id="navpoint-6" playOrder="6">
+      <navLabel>
+        <text>References</text>
+      </navLabel>
+      <content src="article.html#References"/>
+    </navPoint>
   </navMap>
 </ncx>
