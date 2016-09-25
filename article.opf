@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<package unique-identifier="uid" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:asd="http://www.idpf.org/asdfaf">
+  <metadata>
+    <dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core"
+                 xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+      <dc:Title>Hanlon's razor</dc:Title>
+      <dc:Language>en</dc:Language>
+      <dc:Creator>Willi Raschkowski</dc:Creator>
+      <dc:Copyrights>Willi Raschkowski</dc:Copyrights>
+      <dc:Publisher>Willi Raschkowski</dc:Publisher>
+      <x-metadata>
+        <EmbeddedCover>images/cover.png</EmbeddedCover>
+      </x-metadata>
+    </dc-metadata>
+  </metadata>
+  <manifest>
+    <item id="contents" media-type="text/x-oeb1-document" href="toc.html"></item>
+    <item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+    <item id="article" media-type="text/x-oeb1-document" href="article.html"></item>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="contents"/>
+    <itemref idref="article"/>
+  </spine>
+  <guide>
+    <reference type="toc" title="Contents" href="toc.html"/>
+    <reference type="text" title="Article" href="article.html"/>
+  </guide>
+</package>
