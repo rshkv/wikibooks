@@ -1,0 +1,9 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "pretty": "^1.0.0",
+    "request": "^2.75.0"
+  }
+}
