@@ -55,6 +55,16 @@ const clean = function(body) {
 	$('a.new').each((i, el) => $(el).replaceWith($(el).text()));
 	// Remove titles
 	$('*').removeAttr('title');
+	// Remove links in annotations (e.g. 'citation needed')
+	$('.Inline-Template').each((i, el) => {
+		$(el).html(`[<i>${$('i', el).text()}</i>]`);
+	});
+	// Refer links to mobile site
+	$('a').each((i, el) => {
+		const href = $(el).attr('href');
+		if (href.startsWith('/wiki/'))	
+				$(el).attr('href', 'https://en.m.wikipedia.org' + href);
+	});
 
 	return $.html();
 };
