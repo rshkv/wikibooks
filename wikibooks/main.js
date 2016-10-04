@@ -13,11 +13,12 @@ const urls = [
 urls.forEach(url => {
 	Article.fromUrl(url)
 		.then(a => {
-			const html = a.kindleHTML();
+			const html = a.getCleanHTML();
+			console.log(a.getSections());
 			//console.log(pretty(html));
 			//const cleanedHtml = a.clean();
 			//console.log(pretty(cleanedHtml));
-			fs.writeFile('../examples/output.html', pretty(html));
+			//fs.writeFile('examples/output.html', pretty(html));
 		})
 		.catch(error => {
 			console.log(error);
